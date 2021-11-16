@@ -1,0 +1,26 @@
+import {getMiniData} from "./components/TheDataMiner.js";
+import TheModalComponent from "./components/TheModalComponent.js";
+
+(() =>{
+    const myVue = new Vue({
+        created: function() {
+            //fetch mini data
+            //make it available to vue
+            getMiniData(null, (data) => this.miniData = data);
+        },
+
+        data: {
+            miniData: [],
+            message: "Vue is Working!"
+        },
+
+        methods: {
+
+        },
+
+        components: {
+            modal: TheModalComponent
+        }
+
+    }).$mount("#app");
+})()
