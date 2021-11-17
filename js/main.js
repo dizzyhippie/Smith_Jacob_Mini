@@ -1,5 +1,6 @@
 import {getMiniData} from "./components/TheDataMiner.js";
 import TheModalComponent from "./components/TheModalComponent.js";
+import TheThumbnailComponent from "./components/TheThumbnailComponent.js";
 
 (() =>{
     const myVue = new Vue({
@@ -11,15 +12,20 @@ import TheModalComponent from "./components/TheModalComponent.js";
 
         data: {
             miniData: [],
-            message: "Vue is Working!"
+            message: "Vue is Working!",
+            currentMiniItem : {}
         },
 
         methods: {
+            swapInfo(item){
+                this.currentMiniItem = item;
+            },
 
         },
 
         components: {
-            modal: TheModalComponent
+            modal: TheModalComponent,
+            thumbnail: TheThumbnailComponent
         }
 
     }).$mount("#app");

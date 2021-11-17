@@ -4,8 +4,11 @@ export default {
     props: ["piece"],
 
     template:`
-    <section class="modal-panel">
-    <h1 class="title"> {{ piece.name }} </h1>
-    <h1 class="title"> {{ piece.price }} </h1>
+    <section class="modal">
+        <img :src='"images/" + piece.modal' :alt="piece.name" class="modal-images">
+        <h1 class="modal-title">{{ piece.name }}</h1>
+        <h2 class="modal-price">{{ piece.price }}</h2>
+        <p class="modal-desc">{{ piece.description }}</p>
+        <button class="close">CLOSE X</button>
     </section>`
 }
