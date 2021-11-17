@@ -13,8 +13,13 @@
     padding-bottom: 50px;
 }
 
+.learn-more{
+    border: none;
+    padding: 10px;
+}
+
 .thumbnail:nth-child(1){
-    background-color: rgb(189, 79, 79);
+    background-color: #75040a;
 }
 
 .thumbnail:nth-child(2){
@@ -22,7 +27,7 @@
 }
 
 .thumbnail:nth-child(3){
-    background-color: rgb(58, 75, 224);
+    background-color: #1f4970;
 }
 
 .thumbnail:nth-child(4){
@@ -34,6 +39,7 @@
     margin: 0 auto;
     margin-top: 15px;
 }
+
 
 
 
