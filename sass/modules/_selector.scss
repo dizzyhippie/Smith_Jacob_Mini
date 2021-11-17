@@ -1,0 +1,39 @@
+#selector{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 150px;
+    width: 100%;
+}
+
+.selector-images{
+    max-width: 75%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.thumbnail:nth-child(1){
+    background-color: rgb(189, 79, 79);
+}
+
+.thumbnail:nth-child(2){
+    background-color: rgb(53, 53, 53);
+}
+
+.thumbnail:nth-child(3){
+    background-color: rgb(58, 75, 224);
+}
+
+.thumbnail:nth-child(4){
+    background-color: rgb(53, 53, 53);
+}
+
+.learn-more{
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+
+

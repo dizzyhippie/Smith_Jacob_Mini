@@ -1,0 +1,25 @@
+#header{
+    display: flex;
+    flex-direction: row;
+}
+
+#miniLogo{
+    max-width: 10%;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+#mainNav{
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    margin-left: 15px;
+    margin-top: 25px;
+}
+
+#navigation li{
+    color: black;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
