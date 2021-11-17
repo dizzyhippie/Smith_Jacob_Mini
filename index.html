@@ -24,9 +24,9 @@
         </header>
         <section id="gallery"></section>
         <section id="selector">
-            <thumbnail v-for="item in miniData" :key="item.id" :piece="item"></thumbnail>
+            <thumbnail v-on:showdata="swapInfo" v-for="item in miniData" :key="item.id" :piece="item"></thumbnail>
         </section>
-        <modal v-for="item in miniData" :key="item.id" :piece="item" class="modal"></modal>
+        <modal :piece="currentMiniItem"></modal>
     </main>
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 <script src="js/main.js" type="module" defer></script>

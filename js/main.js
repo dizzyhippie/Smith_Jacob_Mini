@@ -12,10 +12,14 @@ import TheThumbnailComponent from "./components/TheThumbnailComponent.js";
 
         data: {
             miniData: [],
-            message: "Vue is Working!"
+            message: "Vue is Working!",
+            currentMiniItem : {}
         },
 
         methods: {
+            swapInfo(item){
+                this.currentMiniItem = item;
+            },
 
         },
 
