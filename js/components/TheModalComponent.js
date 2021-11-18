@@ -9,6 +9,7 @@ export default {
         <h1 class="modal-title">{{ piece.name }}</h1>
         <h2 class="modal-price">{{ piece.price }}</h2>
         <p class="modal-desc">{{ piece.description }}</p>
+        <button class="learn-more">WATCH VIDEO</button>
         <button class="close">CLOSE X</button>
     </section>`
 }
