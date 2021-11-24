@@ -4,7 +4,7 @@
 }
 
 #miniLogo{
-    max-width: 10%;
+    max-width: 15%;
     margin-top: 15px;
     margin-left: 15px;
 }
@@ -20,6 +20,14 @@
 #navigation li{
     color: black;
     display: inline-block;
+    font-family: sans-serif;
     margin-right: 10px;
     margin-left: 10px;
+    padding: 20px;
+}
+
+#navigation li:hover{
+ cursor: pointer;
+ background-color: black;
+ color: #fff;
 }

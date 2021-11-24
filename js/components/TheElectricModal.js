@@ -1,10 +1,10 @@
 export default {
-    name: "TheModalComponent",
+    name: "TheElectricModal",
 
     props: ["piece"],
 
-    template:`
-    <section class="modal">
+    template: `
+    <section class="electric-modal">
         <img :src='"images/" + piece.modal' :alt="piece.name" class="modal-images">
         <h1 class="modal-title">{{ piece.name }}</h1>
         <h2 class="modal-price">{{ piece.price }}</h2>
