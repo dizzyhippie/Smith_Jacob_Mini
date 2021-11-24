@@ -4,17 +4,17 @@ export default {
     props: ["piece"],
 
     methods: {
-        getElectricInfo(){
-            let electricModal = document.querySelector(".electric-modal");
+        getMoreInfo(){
+            let modal = document.querySelector(".modal");
             let closeButton = document.querySelector(".close");
-            electricModal.style.display = "block";
+            modal.style.display = "block";
             this.$emit("showdata",this.piece);
-            closeButton.addEventListener('click', () => {electricModal.style.display = "none";});
+            closeButton.addEventListener('click', () => {modal.style.display = "none";});
         },
     },
 
     template:`
-    <section class="thumbnail-electric" @click="getElectricInfo">
+    <section class="thumbnail-electric" @click="getMoreInfo">
         <h1 class="electric-title">{{ piece.title }}</h1>
         <p class="electric-desc">{{ piece.description }}</p>
         <button class="learn-more">{{ piece.cta }}</button>
