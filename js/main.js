@@ -3,15 +3,11 @@ import TheModalComponent from "./components/TheModalComponent.js";
 import TheThumbnailComponent from "./components/TheThumbnailComponent.js";
 import TheElectricComponent from "./components/TheElectricComponent.js";
 import TheVideoComponent from "./components/TheVideoComponent.js";
-import TheElectricModal from "./components/TheElectricModal.js";
 
 (() =>{
     const myVue = new Vue({
         created: function() {
-            //fetch mini data
-            //make it available to vue
             getMiniData(null, (data) => {
-                //this.miniData = data;
                 this.electricData = data.filter(item => item.electric === "true");
                 this.miniData = data.filter(item => item.electric === "false")
             });
@@ -22,8 +18,6 @@ import TheElectricModal from "./components/TheElectricModal.js";
             miniData: [],
             electricData: [],
             message: "Vue is Working!",
-            //currentMiniItem : {},
-            //currentElectricItem : {},
             currentItem : {}
         },
 
@@ -38,7 +32,6 @@ import TheElectricModal from "./components/TheElectricModal.js";
             thumbnail: TheThumbnailComponent,
             electric: TheElectricComponent,
             videoComponent: TheVideoComponent,
-            electricModal: TheElectricModal
         }
 
     }).$mount("#app");

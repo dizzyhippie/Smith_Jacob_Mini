@@ -1,3 +1,5 @@
+import TheVideoComponent from "./TheVideoComponent.js";
+
 export default {
     name: "TheModalComponent",
 
@@ -8,8 +10,31 @@ export default {
         <img :src='"images/" + piece.modal' :alt="piece.name" class="modal-images">
         <h1 class="modal-title">{{ piece.name }}</h1>
         <h2 class="modal-price">{{ piece.price }}</h2>
+        <videoComponent></videoComponent>
         <p class="modal-desc">{{ piece.description }}</p>
-        <button class="learn-more">WATCH VIDEO</button>
+        <button class="learn-more" @click="launchVideo">WATCH VIDEO</button>
         <button class="close">CLOSE X</button>
-    </section>`
+    </section>`,
+
+    methods: {
+        launchVideo(){
+            let videoPlayer = document.querySelector(".video-player");
+            let closeButton = document.querySelector(".close");
+            let text = document.querySelector(".modal-desc");
+            let vid = document.querySelector("video");
+            videoPlayer.style.display = "block";
+            vid.setAttribute('src',"video/" +`${this.piece.features}`);
+            text.style.display = "none";
+            this.$emit("showdata",this.piece);
+            closeButton.addEventListener('click', () => {modal.style.display = "none";});
+        },
+
+
+
+    },
+
+    components: {
+        videoComponent: TheVideoComponent,
+    }
+
 }

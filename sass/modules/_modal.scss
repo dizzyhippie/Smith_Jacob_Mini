@@ -5,9 +5,10 @@
     background-color: rgb(37, 37, 37);
     filter: drop-shadow(10px 5px 7px #000);
     border-radius: 50px;
-    position: fixed;
+    position: absolute;
     left: 20%;
     top: 10%;
+    overflow: scroll;
 }
 
 .modal-images{
@@ -25,15 +26,18 @@
     
 }
 
-.electric-modal{
+.video-player{
     display: none;
-    width: 850px;
-    height: 600px;
-    background-color: rgb(37, 37, 37);
-    filter: drop-shadow(10px 5px 7px #000);
-    border-radius: 50px;
-    position: fixed;
-    left: 20%;
-    top: 10%;
 }
 
+.video{
+    width: 450px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.toggle{
+    display: block;
+    margin: 0 auto;
+}
