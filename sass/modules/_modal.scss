@@ -35,9 +35,22 @@
     display: block;
     margin: 0 auto;
     margin-bottom: 25px;
+    margin-top: 25px;
 }
 
 .toggle{
     display: block;
     margin: 0 auto;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.modal-car{
+    max-width: 75%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }

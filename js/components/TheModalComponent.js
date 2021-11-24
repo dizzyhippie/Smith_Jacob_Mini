@@ -11,7 +11,10 @@ export default {
         <h1 class="modal-title">{{ piece.name }}</h1>
         <h2 class="modal-price">{{ piece.price }}</h2>
         <videoComponent></videoComponent>
-        <p class="modal-desc">{{ piece.description }}</p>
+        <section class="info">
+            <p class="modal-desc">{{ piece.description }}</p>
+            <img :src='"images/" + piece.pic' :alt="piece.name" class="modal-car">
+        </section>
         <button class="learn-more" @click="launchVideo">WATCH VIDEO</button>
         <button class="close">CLOSE X</button>
     </section>`,
@@ -20,11 +23,11 @@ export default {
         launchVideo(){
             let videoPlayer = document.querySelector(".video-player");
             let closeButton = document.querySelector(".close");
-            let text = document.querySelector(".modal-desc");
+            let info = document.querySelector(".info");
             let vid = document.querySelector("video");
             videoPlayer.style.display = "block";
             vid.setAttribute('src',"video/" +`${this.piece.features}`);
-            text.style.display = "none";
+            info.style.display = "none";
             this.$emit("showdata",this.piece);
             closeButton.addEventListener('click', () => {modal.style.display = "none";});
         },

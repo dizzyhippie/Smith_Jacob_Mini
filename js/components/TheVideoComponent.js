@@ -6,9 +6,9 @@ export default {
     methods: {
         closeVideo(){
             let videoPlayer = document.querySelector(".video-player");
-            let text = document.querySelector(".modal-desc");
+            let info = document.querySelector(".info");
             videoPlayer.style.display = "none";
-            text.style.display = "flex";
+            info.style.display = "flex";
         }
     },
 
