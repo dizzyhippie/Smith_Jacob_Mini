@@ -3,6 +3,7 @@ import TheModalComponent from "./components/TheModalComponent.js";
 import TheThumbnailComponent from "./components/TheThumbnailComponent.js";
 import TheElectricComponent from "./components/TheElectricComponent.js";
 import TheVideoComponent from "./components/TheVideoComponent.js";
+import TheElectricModal from "./components/TheElectricModal.js";
 
 (() =>{
     const myVue = new Vue({
@@ -36,7 +37,8 @@ import TheVideoComponent from "./components/TheVideoComponent.js";
             modal: TheModalComponent,
             thumbnail: TheThumbnailComponent,
             electric: TheElectricComponent,
-            videoComponent: TheVideoComponent
+            videoComponent: TheVideoComponent,
+            electricModal: TheElectricModal
         }
 
     }).$mount("#app");
