@@ -15,7 +15,6 @@ export default {
     template: `
          <section class="video-player">
             <video src="" controls class="video"></video>
-            <h3>Video Title</h3>
-            <button class="toggle" @click="closeVideo">TOGGLE VIDEO</button>
+            <button class="toggle" @click="closeVideo">REMOVE VIDEO</button>
         </section>`
 }

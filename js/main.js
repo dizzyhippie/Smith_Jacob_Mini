@@ -7,10 +7,7 @@ import TheVideoComponent from "./components/TheVideoComponent.js";
 (() =>{
     const myVue = new Vue({
         created: function() {
-            //fetch mini data
-            //make it available to vue
             getMiniData(null, (data) => {
-                //this.miniData = data;
                 this.electricData = data.filter(item => item.electric === "true");
                 this.miniData = data.filter(item => item.electric === "false")
             });
@@ -21,8 +18,6 @@ import TheVideoComponent from "./components/TheVideoComponent.js";
             miniData: [],
             electricData: [],
             message: "Vue is Working!",
-            //currentMiniItem : {},
-            //currentElectricItem : {},
             currentItem : {}
         },
 
