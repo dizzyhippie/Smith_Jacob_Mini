@@ -15,6 +15,10 @@ export default {
             <p class="modal-desc">{{ piece.description }}</p>
             <img :src='"images/" + piece.pic' :alt="piece.name" class="modal-car">
         </section>
+        <section class="extra">
+        <h2 class="speed">{{ piece.special}}</h2>
+        <img :src='"images/" + piece.img' :alt="piece.name" class="modal-speed">
+        </section>
         <button class="learn-more" @click="launchVideo">WATCH VIDEO</button>
         <button class="close">CLOSE X</button>
     </section>`,
