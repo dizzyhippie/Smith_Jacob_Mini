@@ -4,11 +4,14 @@
 }
 
 .thumbnail-title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
     font-size: 24px;
     text-align: center;
 }
 
 .thumbnail-price{
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     margin: 15px 0;
     text-align: center;
@@ -23,10 +26,11 @@
     padding-left: 25px;
     letter-spacing: 1px;
     background-color: #75040a;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
 }
 .modal-price{
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: italic;
     color: #fff;
     font-size: 20px;
@@ -39,9 +43,16 @@
 }
 
 .modal-desc{
-    width: 510px;
+    width: 450px;
     color: #fff;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     padding-left: 15px;
     padding-top: 20px;
+}
+
+.speed{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 50px;
 }
